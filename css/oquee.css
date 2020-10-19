@@ -17,6 +17,10 @@ ul {
     list-style: none;
 }
 
+#header {
+    height: 500px;
+}
+
 .container {
     height: 100%;
 }
@@ -58,4 +62,9 @@ ul {
     }
 }
 
-@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 1023px) {
+    #header {
+        background-position-y: 20%;
+        height: 250px;
+    }
+}

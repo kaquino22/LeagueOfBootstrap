@@ -21,6 +21,10 @@ ul {
     height: 100%;
 }
 
+#header {
+    height: 500px;
+}
+
 .bannerflex {
     color: white;
     height: 100%;
@@ -58,4 +62,9 @@ ul {
     }
 }
 
-@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 1023px) {
+    #header {
+        background-position-y: 25%;
+        height: 250px;
+    }
+}
