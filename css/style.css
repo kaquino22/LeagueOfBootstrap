@@ -27,6 +27,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    .navbar-brand {
+        justify-content: left;
+    }
     .header {
         background-size: 50%;
     }
@@ -35,5 +38,17 @@ body {
     }
     .navbar-brand {
         padding: 1%;
+    }
+    .navMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navWeb {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
     }
 }
