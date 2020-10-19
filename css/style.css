@@ -49,6 +49,9 @@ body {
     .conteudoMobile {
         display: none;
     }
+    #SemAudio {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1023px) {
