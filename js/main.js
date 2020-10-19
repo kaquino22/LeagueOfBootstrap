@@ -12,6 +12,19 @@ $(document).ready(function() {
         pauseAudio();
     });
 
+    $("#ComAudioMobile").click(function() {
+        $("#ComAudioMobile").hide();
+        $("#SemAudioMobile").show();
+        playAudio();
+    });
+
+    $("#SemAudioMobile").click(function() {
+        $("#SemAudioMobile").hide();
+        $("#ComAudioMobile").show();
+        pauseAudio();
+    });
+
+
 
     var x = document.getElementById("musicaLux");
 
