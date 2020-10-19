@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.js"></script>
 
 </head>
 <body>
+  <audio src="soung/lux.mp3" autoplay loop>
+    <p>Seu navegador não suporta o elemento audio </p>
+    </audio>
   <nav class="navbar sticky-top navbar-dark">
     <a class="navbar-brand" href="index.html">
     <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
@@ -20,7 +24,10 @@
     </a>
   </nav>
   <div class="container-fluid">
-      
+
+            <video autoplay muted loop id="league">
+              <source src="img/lux.mp4" type="video/mp4">
+            </video>
             <video autoplay muted loop id="league">
               <source src="img/lux.mp4" type="video/mp4">
             </video>
