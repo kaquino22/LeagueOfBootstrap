@@ -71,6 +71,9 @@ ul {
 }
 
 @media screen and (max-width: 1023px) {
+    .mobilemenu {
+        align-self: center;
+    }
     .navWeb {
         display: none;
     }
@@ -80,5 +83,11 @@ ul {
     .BotaoAudio {
         position: absolute;
         right: 10px;
+    }
+    .botaomenumobile {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
     }
 }
