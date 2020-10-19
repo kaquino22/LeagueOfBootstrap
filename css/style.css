@@ -90,6 +90,7 @@ ul {
     .card {
         width: 50%;
         margin: 0;
+        border: 0;
     }
     .container-fluid {
         text-align: -webkit-center;
