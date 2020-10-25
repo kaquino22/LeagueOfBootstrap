@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     $("#ComAudio").click(function() {
         $("#ComAudio").hide();
         $("#SemAudio").show();
@@ -35,4 +36,5 @@ $(document).ready(function() {
     function pauseAudio() {
         x.pause();
     }
+
 });

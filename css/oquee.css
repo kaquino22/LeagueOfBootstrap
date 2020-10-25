@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+span {
+    color: rgb(20, 117, 245);
+}
+
 #header {
     box-shadow: 1px 4px 30px;
     height: 500px;
