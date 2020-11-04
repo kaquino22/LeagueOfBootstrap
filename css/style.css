@@ -3,3 +3,10 @@
     background-position: center;
     background-size: 100%;
 }
+
+.iconSoc{
+    color: rgb(77,164,255);
+    padding-left:5%;
+    padding-right: 5%;
+    font-size: 40px;
+}
