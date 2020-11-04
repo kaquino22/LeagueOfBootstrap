@@ -12,9 +12,14 @@
 }
 
 .projetosslider{
-    height: 50%;
-    width: 50%;
-    margin: 0 auto;
+   
     border-radius: 1em;
 }
 
+@media screen and (min-width: 1024px) {
+    .projetosslider{
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
