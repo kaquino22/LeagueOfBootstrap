@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauã Maia Aquino</title>
+    <title>LakApp</title>
+    <link rel="stylesheet" href="./css/uikit.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/lakapp.png" type="image/x-icon">
 </head>
 <body>
     
+	<header>
+        <div class="uk-container">
+            <nav class="uk-navbar-transparent" data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#"><img data-src="./img/lakapp.png" width="50" height="50" alt="" uk-img></a>
+                </div>
+                <div class="uk-navbar-right uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Quem Somos?</a></li>   
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-hidden@m"><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="uk-section uk-section-large uk-section-secondary headerSecao">
+        <div class="uk-container uk-container-small uk-text-center">
+            <h1>LakApp</h1>
+            <p class="uk-text-large">Technological World</p>
+        </div>
+    </section>
+
+    <footer class="uk-section uk-section-default uk-section-small">
+        <div class="uk-container">
+            <p class="uk-text-small uk-text-center">Copyright 2020 - LakApp Technological World</span></a></p>
+        </div>
+    </footer>
+
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+            <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#">Quem Somos?</a></li>
+                <li><a href="#">Projetos</a></li>
+    </div>
+    <!-- /OFFCANVAS -->
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/uikit.js"></script>
 </body>
 </html>
