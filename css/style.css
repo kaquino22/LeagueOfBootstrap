@@ -10,3 +10,10 @@
     padding-right: 5%;
     font-size: 40px;
 }
+
+.projetosslider{
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 1em;
+}
