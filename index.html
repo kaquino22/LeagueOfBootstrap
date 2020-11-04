@@ -9,18 +9,17 @@
     <link rel="shortcut icon" href="./img/lakapp.png" type="image/x-icon">
 </head>
 <body>
-    
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
 	<header>
-        <div class="uk-container">
-            <nav class="uk-navbar-transparent" data-uk-navbar>
+            <nav class="uk-navbar-container" data-uk-navbar>
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-logo uk-animation-scale-down" href="#"><img data-src="./img/lakapp.png" width="50" height="50" alt="" uk-img></a>
                 </div>
                 <div class="uk-navbar-right uk-visible@m">
                     <ul class="uk-navbar-nav uk-animation-fade">
-                        <li><a href="#">Quem Somos?</a></li>   
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#somos" uk-scroll>Quem Somos?</a></li>   
+                        <li><a href="#projetos" uk-scroll>Projetos</a></li>
+                        <li><a href="#contato" uk-scroll>Contato</a></li>
                     </ul>
                 </div>
                 <div class="uk-navbar-right">
@@ -29,8 +28,8 @@
                     </ul>
                 </div>
             </nav>
-        </div>
     </header>
+</div>
 
     <section class="uk-section uk-section-large uk-section-secondary headerSecao">
         <div class="uk-container uk-container-small uk-text-center">
@@ -38,6 +37,70 @@
             <p class="uk-text-large uk-animation-slide-right">Technological World</p>
         </div>
     </section>
+
+    <div class="uk-section uk-section-muted" id="somos" uk-scrollspy="cls:uk-animation-slide-right">
+        <div class="uk-container">
+    
+            <h3 class="uk-text-center">Quem Somos?</h3>
+    
+            <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+                <div>
+                    <p class="uk-text-justify"> &nbsp; &nbsp;LakApp Technological World é uma Desenvolvedora Web/Mobile/Games, criada em 2019 por Kauã Maia Aquino, Produzimos Sites, Ecommerces, Aplicativos Android, Programação de Jogos, Design e muito mais, Serviços de Qualidade com a máxima dedicação ao cliente, venha com a gente faça um orçamento já!</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="uk-section uk-section" id="projetos" uk-scrollspy="cls:uk-animation-slide-left">
+        <div class="uk-container">
+            <h3 class="uk-text-center">Projetos</h3>
+            <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+                <div>
+                    <p class="uk-text-center">Abaixo segue alguns projetos produzidos pela nossa equipe, alguns com fins educacionais e outros trabalhos reais!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-2@m" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./img/leagueofsite.png" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">League Of Legends</h3>
+                    <p>Projeto realizado com fins de estudos, com o tema do jogo League Of Legends</p>
+                    <button class="uk-button uk-button-secondary uk-width-1-1">Acesse o Site Aqui!</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-bottom">
+                    <img src="./img/nazisite.png" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Filosofia - Governos Ditatoriais</h3>
+                    <p>Site com fins de estudos, falando sobre governos ditatoriais</p>
+                    <button class="uk-button uk-button-secondary uk-width-1-1">Acesse o Site Aqui!</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-section uk-section" id="contato" uk-scrollspy="cls:uk-animation-slide-left">
+        <div class="uk-container">
+            <h3 class="uk-text-center">Contato</h3>
+            <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+                <div>
+                    <p class="uk-text-center">Abaixo segue alguns projetos produzidos pela nossa equipe, alguns com fins educacionais e outros trabalhos reais!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="uk-section uk-section-default uk-section-small">
         <div class="uk-container">
