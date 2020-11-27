@@ -12,7 +12,9 @@ body {
 li {
     list-style: none;
 }
-
+.icones{
+    font-size: 40px; 
+}
 ul {
     list-style: none;
 }
