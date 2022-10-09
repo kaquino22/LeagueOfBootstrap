@@ -3,7 +3,7 @@ import { fontWeight } from '@mui/system';
 import { motion } from 'framer-motion';
 
 export const BackgroundDiv = styled('div')(({ theme }) => ({
-    backgroundColor: '#291C47',
+    zIndex: 1,
     margin: 'auto',
     height: '100%',
     display: 'flex',
@@ -15,6 +15,70 @@ export const Content = styled('div')(({ theme }) => ({
     margin: 'auto',
     width: '90%',
     height: '100%'
+}));
+
+export const Top = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'center',
+    height: '100%',
+    alignItems: 'start',
+    fontSize: '3rem',
+    paddingTop: '2rem',
+    cursor: 'pointer',
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+    }
+}));
+
+export const Down = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'center',
+    height: '100%',
+    alignItems: 'self-end',
+    fontSize: '3rem',
+    paddingBottom: '2rem',
+    cursor: 'pointer',
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+    }
+}));
+
+export const Left = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'start',
+    alignItems: 'center',
+    height: '100%',
+    fontSize: '3rem',
+    paddingBottom: '2rem',
+    cursor: 'pointer',
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+    }
+}));
+
+export const Rigth = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'end',
+    height: '100%',
+    alignItems: 'center',
+    fontSize: '3rem',
+    paddingBottom: '2rem',
+    cursor: 'pointer',
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+    }
 }));
 
 export const FontContent = styled('div')(({ theme }) => ({
@@ -35,7 +99,7 @@ export const FontContent = styled('div')(({ theme }) => ({
 }));
 
 export const Icons = styled(motion.a)(({theme}) =>({
-    
+    cursor: 'pointer'
 }))
 
 export const LogoBandeira = styled('img')(({ theme }) => ({
