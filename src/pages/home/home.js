@@ -9,6 +9,7 @@ import {
   AiFillCaretLeft,
   AiOutlineCaretUp,
 } from "react-icons/ai";
+import Tech from "../../img/Tech.svg";
 import { useCallback, useState } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -214,14 +215,14 @@ function Home() {
                 </Styled.TitlePrincipal>
               </Styled.Apresentation>
             </Styled.Header>
-            <Styled.Left onClick={() => setMenuSelected("game")}>
-              <AiFillCaretLeft />
+            <Styled.Left>
+              <AiFillCaretLeft onClick={() => setMenuSelected("tech")} />
             </Styled.Left>
-            <Styled.Rigth onClick={() => setMenuSelected("about")}>
-              <AiFillCaretRight />
+            <Styled.Rigth>
+              <AiFillCaretRight onClick={() => setMenuSelected("about")} />
             </Styled.Rigth>
-            <Styled.Down onClick={() => setMenuSelected("project")}>
-              <AiOutlineCaretDown />
+            <Styled.Down>
+              <AiOutlineCaretDown onClick={() => setMenuSelected("project")} />
             </Styled.Down>
           </>
         )}
@@ -237,10 +238,42 @@ function Home() {
                 damping: 20,
               }}
             >
-              <Styled.Apresentation>Sobre</Styled.Apresentation>
+              <Styled.AboutUs>
+                <div style={{ textAlign: "center" }}>
+                  <Styled.Title>#ABOUT US</Styled.Title>
+                  <Styled.Subtitle>Its Me!</Styled.Subtitle>
+                </div>
+                <Styled.AboutUsItens>
+                  <Styled.AboutUsItem>
+                    <Styled.ListAbout>
+                      <Styled.ListAboutItem>
+                        I was Born in 2003
+                      </Styled.ListAboutItem>
+                      <Styled.ListAboutItem>
+                        Brazilian - São Paulo.
+                      </Styled.ListAboutItem>
+                      <Styled.ListAboutItem>
+                        +3 YEARS Experience in Fullstack Development.
+                      </Styled.ListAboutItem>
+                      <Styled.ListAboutItem>
+                        Curious and Willing to Learn
+                      </Styled.ListAboutItem>
+                      <Styled.ListAboutItem>Team Work</Styled.ListAboutItem>
+                      <Styled.ListAboutItem>
+                        Programming Lover ♥
+                      </Styled.ListAboutItem>
+                      <Styled.ListAboutItem>
+                        Technical TI School Completed in <br></br>2021.{" "}
+                        <span>(ETEC)</span>
+                      </Styled.ListAboutItem>
+                    </Styled.ListAbout>
+                  </Styled.AboutUsItem>
+                </Styled.AboutUsItens>
+                <Styled.TextPhrase>"No fear of the unknown"</Styled.TextPhrase>
+              </Styled.AboutUs>
             </Styled.Header>
-            <Styled.Left onClick={() => setMenuSelected("home")}>
-              <AiFillCaretLeft />
+            <Styled.Left>
+              <AiFillCaretLeft onClick={() => setMenuSelected("home")} />
             </Styled.Left>
           </>
         )}
@@ -258,13 +291,13 @@ function Home() {
             >
               <Styled.Apresentation>Projetos</Styled.Apresentation>
             </Styled.Header>
-            <Styled.Top onClick={() => setMenuSelected("home")}>
-              <AiOutlineCaretUp />
+            <Styled.Top>
+              <AiOutlineCaretUp onClick={() => setMenuSelected("home")} />
             </Styled.Top>
           </>
         )}
 
-        {menuSelected == "game" && (
+        {menuSelected == "tech" && (
           <>
             <Styled.Header
               initial={{ marginLeft: 2000 }}
@@ -275,10 +308,16 @@ function Home() {
                 damping: 20,
               }}
             >
-              <Styled.Apresentation>Game</Styled.Apresentation>
+              <Styled.DivImg>
+                <div style={{ textAlign: "center" }}>
+                  <Styled.Title>#TECHNOLOGIES</Styled.Title>
+                  <Styled.Subtitle>My Habilitys!</Styled.Subtitle>
+                </div>
+                <Styled.TechnologiesImg src={Tech} />
+              </Styled.DivImg>
             </Styled.Header>
-            <Styled.Rigth onClick={() => setMenuSelected("home")}>
-              <AiFillCaretRight />
+            <Styled.Rigth>
+              <AiFillCaretRight onClick={() => setMenuSelected("home")} />
             </Styled.Rigth>
           </>
         )}

@@ -27,9 +27,11 @@ export const Top = styled(motion.div)(({ theme }) => ({
     fontSize: '3rem',
     paddingTop: '2rem',
     cursor: 'pointer',
+    zIndex: 3,
 
     'svg':{
-        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
     }
 }));
 
@@ -43,9 +45,11 @@ export const Down = styled(motion.div)(({ theme }) => ({
     fontSize: '3rem',
     paddingBottom: '2rem',
     cursor: 'pointer',
+    zIndex: 3,
 
     'svg':{
-        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
     }
 }));
 
@@ -59,9 +63,11 @@ export const Left = styled(motion.div)(({ theme }) => ({
     fontSize: '3rem',
     paddingBottom: '2rem',
     cursor: 'pointer',
+    zIndex: 3,
 
     'svg':{
-        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
     }
 }));
 
@@ -74,10 +80,11 @@ export const Rigth = styled(motion.div)(({ theme }) => ({
     alignItems: 'center',
     fontSize: '3rem',
     paddingBottom: '2rem',
-    cursor: 'pointer',
-
+    zIndex: 3,
+    
     'svg':{
-        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
     }
 }));
 
@@ -234,8 +241,9 @@ export const TechnologiesImg = styled('img')(({ theme }) => ({
 }));
 
 export const DivImg = styled('div')(({ theme }) => ({
-    width: '100%',
+    width: '80%',
     textAlign: 'center',  
+    zIndex: 1
 }));
 
 export const Title = styled('p')(({ theme }) => ({
@@ -261,18 +269,20 @@ export const Subtitle = styled('p')(({ theme }) => ({
 export const AboutUs = styled('div')(({ theme }) => ({
     margin: 'auto',
     width: '90%',
-    marginTop: '8rem',
     textAlign: 'end',
+    zIndex: 1,
 
     "@media (max-width: 800px)": {
         width: '100%',
-        marginTop: '2rem',
         textAlign: 'center'
     }
 }));
 
 export const AboutUsItens = styled('div')(({ theme }) => ({
     display: 'flex',
+    alignContent: 'center',
+    alignSelf: 'center',
+    justifyContent: 'center',
 
     "@media (max-width: 1200px)": {
         flexDirection: 'column',
@@ -284,7 +294,7 @@ export const AboutUsItem = styled('div')(({ theme }) => ({
     background: 'linear-gradient(180deg, #4F22CF 0%, #291C47 100%)',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     borderRadius: '25px',
-    fontSize: '2.0rem',
+    fontSize: '1.5rem',
     color: '#0EE6B7',
     textAlign: 'start',
     padding: '2rem',
@@ -371,6 +381,7 @@ export const ProjectImg = styled('img')(({ theme }) => ({
     borderRadius: '2rem',
     width: '100%',
     height: '50%',
+    zIndex: 1,
 
     "@media (max-width: 1270px)": {
         height: '25%',
