@@ -263,8 +263,7 @@ function Home() {
                         Programming Lover ♥
                       </Styled.ListAboutItem>
                       <Styled.ListAboutItem>
-                        Technical TI School Completed in <br></br>2021.{" "}
-                        <span>(ETEC)</span>
+                        Technical TI School Completed in 2021. (ETEC)
                       </Styled.ListAboutItem>
                     </Styled.ListAbout>
                   </Styled.AboutUsItem>
