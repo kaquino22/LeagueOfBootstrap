@@ -1,10 +1,14 @@
-import { styled } from '@mui/material/styles';
+import { styled,keyframes } from '@mui/material/styles';
 import { fontWeight } from '@mui/system';
+import { motion } from 'framer-motion';
 
 export const BackgroundDiv = styled('div')(({ theme }) => ({
-    backgroundColor: '#291C47',
+    zIndex: 1,
     margin: 'auto',
-    height: '100%'
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column'
 }));
 
 export const Content = styled('div')(({ theme }) => ({
@@ -12,6 +16,98 @@ export const Content = styled('div')(({ theme }) => ({
     width: '90%',
     height: '100%'
 }));
+
+export const Top = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'center',
+    height: '100%',
+    alignItems: 'start',
+    fontSize: '3rem',
+    paddingTop: '2rem',
+    cursor: 'pointer',
+    zIndex: 3,
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
+    }
+}));
+
+export const Down = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'center',
+    height: '100%',
+    alignItems: 'self-end',
+    fontSize: '3rem',
+    paddingBottom: '2rem',
+    cursor: 'pointer',
+    zIndex: 3,
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
+    }
+}));
+
+export const Left = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'start',
+    alignItems: 'center',
+    height: '100%',
+    fontSize: '3rem',
+    paddingBottom: '2rem',
+    cursor: 'pointer',
+    zIndex: 3,
+
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
+    }
+}));
+
+export const Rigth = styled(motion.div)(({ theme }) => ({
+    position: 'fixed',
+    color: 'white',
+    display: 'flex',
+    alignSelf: 'end',
+    height: '100%',
+    alignItems: 'center',
+    fontSize: '3rem',
+    paddingBottom: '2rem',
+    zIndex: 3,
+    
+    'svg':{
+        filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
+        cursor: 'pointer',
+    }
+}));
+
+export const FontContent = styled('div')(({ theme }) => ({
+    color: 'white',
+    position: 'fixed',
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'end',
+    paddingTop: '1rem',
+
+    "a":{
+        paddingRight: '1rem'
+    },
+    "a svg":{
+        fontSize: '1.5rem',
+        fill: '#8b57ff'
+    }
+}));
+
+export const Icons = styled(motion.a)(({theme}) =>({
+    cursor: 'pointer'
+}))
 
 export const LogoBandeira = styled('img')(({ theme }) => ({
     cursor: 'pointer'
@@ -48,8 +144,7 @@ export const MenuItem = styled('li')(({ theme, isActive }) => ({
     }),
 }));
 
-export const Header = styled('div')(({ theme }) => ({
-    marginTop: '4rem',
+export const Header = styled(motion.div)(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -71,6 +166,7 @@ export const TitleSubti = styled('p')(({theme}) =>({
     }
 }));
 
+
 export const TitlePrincipal = styled('p')(({theme}) =>({
     fontSize: '2.75rem',
 
@@ -79,30 +175,33 @@ export const TitlePrincipal = styled('p')(({theme}) =>({
     },
 
     "@media (max-width: 1417px)": {
-        fontSize: '1.6rem',
+        fontSize: '1.3rem',
     },
     
     "@media (max-width: 800px)": {
-        fontSize: '1.3rem',
-    }
+        fontSize: '1rem',
+    },
+   
 }));
 
-export const Kaua = styled('img')(({ theme }) => ({
+
+export const Kaua = styled(motion.img)(({ theme }) => ({
     marginRight: '8rem',
 
     "@media (max-width: 1417px)": {
         marginRight: '0rem',
-        marginBottom: '2rem'
+        marginBottom: '4rem'
     },
 
     "@media (max-width: 800px)": {
         marginRight: '0rem',
-        marginBottom: '2rem',
-        width: '100%'
+        marginBottom: '4rem',
+        width: '80%'
     }
 }));
 
 export const Apresentation = styled('div')(({ theme }) => ({
+    zIndex: '1',
     marginLeft: '4rem',
     background: 'linear-gradient(180deg, #4F22CF 0%, #291C47 100%)',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
@@ -113,9 +212,6 @@ export const Apresentation = styled('div')(({ theme }) => ({
     fontWeight: '700',
     padding: '4rem',
 
-    "span": {
-        color: '#0EE6B7',
-    },
 
     "@media (max-width: 1417px)": {
      marginLeft: '0rem',
@@ -145,8 +241,9 @@ export const TechnologiesImg = styled('img')(({ theme }) => ({
 }));
 
 export const DivImg = styled('div')(({ theme }) => ({
-    width: '100%',
+    width: '80%',
     textAlign: 'center',  
+    zIndex: 1
 }));
 
 export const Title = styled('p')(({ theme }) => ({
@@ -172,18 +269,20 @@ export const Subtitle = styled('p')(({ theme }) => ({
 export const AboutUs = styled('div')(({ theme }) => ({
     margin: 'auto',
     width: '90%',
-    marginTop: '8rem',
     textAlign: 'end',
+    zIndex: 1,
 
     "@media (max-width: 800px)": {
         width: '100%',
-        marginTop: '2rem',
         textAlign: 'center'
     }
 }));
 
 export const AboutUsItens = styled('div')(({ theme }) => ({
     display: 'flex',
+    alignContent: 'center',
+    alignSelf: 'center',
+    justifyContent: 'center',
 
     "@media (max-width: 1200px)": {
         flexDirection: 'column',
@@ -195,7 +294,7 @@ export const AboutUsItem = styled('div')(({ theme }) => ({
     background: 'linear-gradient(180deg, #4F22CF 0%, #291C47 100%)',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     borderRadius: '25px',
-    fontSize: '2.0rem',
+    fontSize: '1.5rem',
     color: '#0EE6B7',
     textAlign: 'start',
     padding: '2rem',
@@ -282,6 +381,7 @@ export const ProjectImg = styled('img')(({ theme }) => ({
     borderRadius: '2rem',
     width: '100%',
     height: '50%',
+    zIndex: 1,
 
     "@media (max-width: 1270px)": {
         height: '25%',
