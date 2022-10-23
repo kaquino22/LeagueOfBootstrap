@@ -10,9 +10,14 @@ import {
   AiOutlineCaretUp,
 } from "react-icons/ai";
 import Tech from "../../img/Tech.svg";
-import { useCallback, useState } from "react";
+import { useCallback, useState, useRef } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+import './style.css';
 
 function Home() {
   const particlesInit = useCallback(async (engine) => {
@@ -24,6 +29,8 @@ function Home() {
   }, []);
 
   const [menuSelected, setMenuSelected] = useState("home");
+
+  const [width, setWidth] = useState(window.innerWidth.toString());
 
   return (
     <>
@@ -81,7 +88,7 @@ function Home() {
             shape: {
               type: "image",
               image: {
-                src: "https://github.com/kauaquino/kauaquino.github.io/blob/feat/dev-new-version/src/img/coding.png?raw=true",
+                src: "https://github.com/kauaquino/kauaquino.github.io/blob/dev/src/img/coding.png?raw=true",
                 width: 100,
                 height: 100,
               },
@@ -288,7 +295,104 @@ function Home() {
                 damping: 20,
               }}
             >
-              <Styled.Apresentation>Projetos</Styled.Apresentation>
+              <Swiper
+                navigation={true}
+                modules={[Navigation]}
+
+                breakpoints={{
+                  1301: {
+                    slidesPerView: 3
+                  },
+                  801: {
+                    slidesPerView: 2
+                  },
+                  800:{
+                    slidesPerView: 1
+                  }
+                }}
+                spaceBetween={30}
+                className="mySwiper">
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>HTML</span>
+                      <span>JS</span>
+                      <span>REACT</span>
+                      <span>C#</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Description: Is a landing page application
+                    </div>
+                    <Styled.BtnsDiv>
+                      <a>Preview</a>  <a>Code</a>
+                    </Styled.BtnsDiv>
+                  </Styled.ContentSlider>
+
+                </Styled.Slider>
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>HTML</span>
+                      <span>JS</span>
+                      <span>REACT</span>
+                      <span>C#</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Description: Is a landing page application
+                    </div>
+                    <Styled.BtnsDiv>
+                      <a>Preview</a>  <a>Code</a>
+                    </Styled.BtnsDiv>
+                  </Styled.ContentSlider>
+
+                </Styled.Slider>
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>HTML</span>
+                      <span>JS</span>
+                      <span>REACT</span>
+                      <span>C#</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Description: Is a landing page application
+                    </div>
+                    <Styled.BtnsDiv>
+                      <a>Preview</a>  <a>Code</a>
+                    </Styled.BtnsDiv>
+                  </Styled.ContentSlider>
+
+                </Styled.Slider>
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>HTML</span>
+                      <span>JS</span>
+                      <span>REACT</span>
+                      <span>C#</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Description: Is a landing page application
+                    </div>
+                    <Styled.BtnsDiv>
+                      <a>Preview</a>  <a>Code</a>
+                    </Styled.BtnsDiv>
+                  </Styled.ContentSlider>
+
+                </Styled.Slider>
+              </Swiper>
             </Styled.Header>
             <Styled.Top>
               <AiOutlineCaretUp onClick={() => setMenuSelected("home")} />
