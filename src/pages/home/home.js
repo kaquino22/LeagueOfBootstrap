@@ -88,7 +88,7 @@ function Home() {
             shape: {
               type: "image",
               image: {
-                src: "https://github.com/kauaquino/kauaquino.github.io/blob/feat/dev-new-version/src/img/coding.png?raw=true",
+                src: "https://github.com/kauaquino/kauaquino.github.io/blob/dev/src/img/coding.png?raw=true",
                 width: 100,
                 height: 100,
               },
