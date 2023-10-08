@@ -1,17 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.1813f820.css",
-    "main.js": "/static/js/main.a97a101a.js",
+    "main.js": "/static/js/main.28c319ac.js",
     "static/js/787.03142595.chunk.js": "/static/js/787.03142595.chunk.js",
-    "static/media/Kaua.svg": "/static/media/Kaua.a65f7ece40058a89e925a80042130ae3.svg",
+    "static/media/brazil.gif": "/static/media/brazil.ff5f69fb71d4ff39039c.gif",
+    "static/media/STAR.gif": "/static/media/STAR.010cb1cc41b943a1c4c8.gif",
+    "static/media/kattybank.gif": "/static/media/kattybank.48c53197ee411c7b7f94.gif",
+    "static/media/todo.gif": "/static/media/todo.b3c966c33e4f54cd11ed.gif",
+    "static/media/pokedex.gif": "/static/media/pokedex.272a791f94e33e61352f.gif",
+    "static/media/arka.gif": "/static/media/arka.c71d6e1f6c13faa7d2a9.gif",
+    "static/media/calculadora.gif": "/static/media/calculadora.134a16da6ff786c2249e.gif",
+    "static/media/reactCart.gif": "/static/media/reactCart.98a4f2aab7108477cf8e.gif",
+    "static/media/python.jpeg": "/static/media/python.a3ef2d41efd08dd8428d.jpeg",
+    "static/media/katty.jpeg": "/static/media/katty.b20d17e8948a5b5810da.jpeg",
     "static/media/Tech.svg": "/static/media/Tech.38ad3977efd1bfb60f85be28b4270e77.svg",
     "index.html": "/index.html",
     "main.1813f820.css.map": "/static/css/main.1813f820.css.map",
-    "main.a97a101a.js.map": "/static/js/main.a97a101a.js.map",
+    "main.28c319ac.js.map": "/static/js/main.28c319ac.js.map",
     "787.03142595.chunk.js.map": "/static/js/787.03142595.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1813f820.css",
-    "static/js/main.a97a101a.js"
+    "static/js/main.28c319ac.js"
   ]
 }
