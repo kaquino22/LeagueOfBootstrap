@@ -1,5 +1,14 @@
 import * as Styled from "./Home.styled";
-import Logo from "../../img/Kaua.svg";
+import reactCart from "../../img/projects/reactCart.gif";
+import pythonGraph from "../../img/projects/python.jpeg";
+import arkanoid from "../../img/projects/arka.gif";
+import kattybank from "../../img/projects/kattybank.gif";
+import katty from "../../img/projects/katty.jpeg";
+import poke from "../../img/projects/pokedex.gif";
+import todo from "../../img/projects/todo.gif";
+import star from "../../img/projects/STAR.gif";
+import calculadora from "../../img/projects/calculadora.gif";
+import brazil from "../../img/projects/brazil.gif";
 import { Typewriter } from "react-simple-typewriter";
 import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import {
@@ -169,22 +178,6 @@ function Home() {
         >
           <FaLinkedin />
         </Styled.Icons>
-
-        <Styled.Icons
-          onClick={() =>
-            window.open("https://www.instagram.com/kaua.ts/", "_blank")
-          }
-          initial={{ filter: "hue-rotate(0deg)" }}
-          animate={{ filter: "hue-rotate(45deg)" }}
-          transition={{
-            ease: "linear",
-            duration: 3,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        >
-          <FaInstagram />
-        </Styled.Icons>
       </Styled.FontContent>
 
       <Styled.BackgroundDiv>
@@ -195,17 +188,7 @@ function Home() {
               animate={{ scale: 1, opacity: "100%" }}
               transition={{ duration: 1.5 }}
             >
-              <Styled.Kaua
-                src={Logo}
-                initial={{ scale: 1 }}
-                animate={{ scale: 1.2 }}
-                transition={{
-                  ease: "linear",
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                }}
-              />
+
               <Styled.Apresentation>
                 <Styled.TitlePrincipal>
                   <span style={{ color: "#0EE6B7" }}>&lt;H3&gt;</span>
@@ -254,23 +237,23 @@ function Home() {
                   <Styled.AboutUsItem>
                     <Styled.ListAbout>
                       <Styled.ListAboutItem>
-                        I was Born in 2003
+                        Programming Lover ♥
                       </Styled.ListAboutItem>
                       <Styled.ListAboutItem>
                         Brazilian - São Paulo.
                       </Styled.ListAboutItem>
                       <Styled.ListAboutItem>
-                        +3 YEARS Experience in Fullstack Development.
+                        5 YEARS Experience in Fullstack Development.
                       </Styled.ListAboutItem>
                       <Styled.ListAboutItem>
                         Curious and Willing to Learn
                       </Styled.ListAboutItem>
                       <Styled.ListAboutItem>Team Work</Styled.ListAboutItem>
                       <Styled.ListAboutItem>
-                        Programming Lover ♥
+                        Technical TI School Completed in 2021. (ETEC)
                       </Styled.ListAboutItem>
                       <Styled.ListAboutItem>
-                        Technical TI School Completed in 2021. (ETEC)
+                        Bachelor of Science in Computer Engineering (2023 - 2027 - Faculdade Descomplica)
                       </Styled.ListAboutItem>
                     </Styled.ListAbout>
                   </Styled.AboutUsItem>
@@ -306,91 +289,159 @@ function Home() {
                   801: {
                     slidesPerView: 2
                   },
-                  800:{
+                  800: {
                     slidesPerView: 1
                   }
                 }}
                 spaceBetween={30}
                 className="mySwiper">
+
+
                 <Styled.Slider>
                   <Styled.imgContainer>
-                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                    <img src={star} />
                   </Styled.imgContainer>
                   <Styled.ContentSlider>
                     <Styled.TechDiv>
                       <span>HTML</span>
+                      <span>CSS</span>
                       <span>JS</span>
-                      <span>REACT</span>
-                      <span>C#</span>
                     </Styled.TechDiv>
                     <div style={{ marginBottom: '2rem' }}>
-                      Description: Is a landing page application
+                      I created a landing page for study purposes using HTML, CSS, and JS, inspired by Starbucks Brazil
                     </div>
-                    <Styled.BtnsDiv>
-                      <a>Preview</a>  <a>Code</a>
-                    </Styled.BtnsDiv>
-                  </Styled.ContentSlider>
 
+                  </Styled.ContentSlider>
                 </Styled.Slider>
+
                 <Styled.Slider>
                   <Styled.imgContainer>
-                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                    <img src={calculadora} />
                   </Styled.imgContainer>
                   <Styled.ContentSlider>
                     <Styled.TechDiv>
-                      <span>HTML</span>
-                      <span>JS</span>
-                      <span>REACT</span>
-                      <span>C#</span>
+                      <span>REACTJS</span>
                     </Styled.TechDiv>
                     <div style={{ marginBottom: '2rem' }}>
-                      Description: Is a landing page application
+                      A calculator made in ReactJS
                     </div>
-                    <Styled.BtnsDiv>
-                      <a>Preview</a>  <a>Code</a>
-                    </Styled.BtnsDiv>
-                  </Styled.ContentSlider>
 
+                  </Styled.ContentSlider>
                 </Styled.Slider>
+
                 <Styled.Slider>
                   <Styled.imgContainer>
-                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                    <img src={poke} />
                   </Styled.imgContainer>
                   <Styled.ContentSlider>
                     <Styled.TechDiv>
+                      <span>REACTJS</span>
+                      <span>CSS</span>
                       <span>HTML</span>
-                      <span>JS</span>
-                      <span>REACT</span>
-                      <span>C#</span>
                     </Styled.TechDiv>
                     <div style={{ marginBottom: '2rem' }}>
-                      Description: Is a landing page application
+                      A Pokédex using ReactJS, Axios, Material UI, and PokeAPI.
                     </div>
                     <Styled.BtnsDiv>
-                      <a>Preview</a>  <a>Code</a>
+                      <a href="https://github.com/kauaquino/PokeAll-Pokedex" target="_blank">Code</a>
                     </Styled.BtnsDiv>
                   </Styled.ContentSlider>
-
                 </Styled.Slider>
+
                 <Styled.Slider>
                   <Styled.imgContainer>
-                    <img src="https://themewagon.com/wp-content/uploads/2019/02/appru-1.jpg" />
+                    <img src={brazil} />
                   </Styled.imgContainer>
                   <Styled.ContentSlider>
                     <Styled.TechDiv>
                       <span>HTML</span>
+                      <span>CSS</span>
                       <span>JS</span>
-                      <span>REACT</span>
-                      <span>C#</span>
                     </Styled.TechDiv>
                     <div style={{ marginBottom: '2rem' }}>
-                      Description: Is a landing page application
+                    Brazil landing page
                     </div>
                     <Styled.BtnsDiv>
-                      <a>Preview</a>  <a>Code</a>
+                      <a href="https://github.com/kauaquino/Beleza_Brazileira_Landing_Page" target="_blank">Code</a>
                     </Styled.BtnsDiv>
                   </Styled.ContentSlider>
+                </Styled.Slider>
 
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src={katty} />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>FLUTTER</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Landing Page for branding Katty Technology
+                    </div>
+                  </Styled.ContentSlider>
+                </Styled.Slider>
+
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src={kattybank} />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>REACTJS</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Im create page interactive to add news credits cards, theme based in starwars, for brand using Katty Technology
+                    </div>
+                  </Styled.ContentSlider>
+                </Styled.Slider>
+
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src={arkanoid} />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>GAMEMAKER</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      A copy of the game Arkanoid in GameMaker
+                    </div>
+                  </Styled.ContentSlider>
+                </Styled.Slider>
+
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src={pythonGraph} />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>PYTHON</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                    I generated a graph depicting the crime counts by region in Los Angeles 
+                    </div>
+                    <Styled.BtnsDiv>
+                      <a href="https://github.com/kauaquino/LosAngeles-Crime-Graphic" target="_blank">Code</a>
+                    </Styled.BtnsDiv>
+                  </Styled.ContentSlider>
+                </Styled.Slider>
+
+                <Styled.Slider>
+                  <Styled.imgContainer>
+                    <img src={reactCart} />
+                  </Styled.imgContainer>
+                  <Styled.ContentSlider>
+                    <Styled.TechDiv>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>REACTJS</span>
+                    </Styled.TechDiv>
+                    <div style={{ marginBottom: '2rem' }}>
+                      Cart made in ReactJs, and Styled Components, very simple, but functional!
+                    </div>
+                  </Styled.ContentSlider>
                 </Styled.Slider>
               </Swiper>
             </Styled.Header>

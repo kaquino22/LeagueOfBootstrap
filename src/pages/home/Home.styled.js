@@ -185,6 +185,8 @@ export const TitlePrincipal = styled("p")(({ theme }) => ({
 
 export const Kaua = styled(motion.img)(({ theme }) => ({
   marginRight: "8rem",
+  borderRadius: '1rem',
+  width: '15rem',
 
   "@media (max-width: 1417px)": {
     marginRight: "0rem",
@@ -283,10 +285,12 @@ export const imgContainer = styled('div')(({ theme }) => ({
 export const ContentSlider = styled("div")(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  paddingTop: '2rem',
+  paddingTop: '1rem',
   background: 'linear-gradient(180deg, #4F22CF 0%, #291C47 100%)',
   width: '100%',
   display: 'flex',
+  minHeight: '15rem',
+  maxHeight: '15rem',
   justifyContent: 'space-around',
 
   flexDirection: 'column',
